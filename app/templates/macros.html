@@ -1,0 +1,6 @@
+{% macro displayblogs(blog_list) %}
+    {% for blog in blog_list %}
+
+        <p> {{ blog.pitch }}</p>
+    {% endfor %}
+{% endmacro %}
