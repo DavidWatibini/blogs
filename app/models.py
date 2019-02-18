@@ -86,8 +86,8 @@ class Popular:
 	'''
 	News class to define Objects
 	'''
-	def __init__(self, author, qoute):
+	def __init__(self, author, quote):
 
 
 		self.author = author
-		self.qoute = qoute
+		self.quote = quote

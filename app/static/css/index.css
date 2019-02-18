@@ -1,7 +1,42 @@
-h3{
-  color: blue;
+*{
+	color: back;
 }
-p{
-  color: red;
+img{
+	border-radius: 20px;
+	opacity: 1;
+  	display: block;
+  	width: 100%;
+  	height: auto;
+  	transition: .5s ease;
+  	backface-visibility: hidden;
+  	border-radius: 20px;
 }
-
+.middle {
+  transition: .5s ease;
+  opacity: 0.6;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cards:hover .img {
+  opacity: 0.3;
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+.cards:hover .middle {
+  opacity: 1;
+}
+.cards-two{
+	padding: 10px;
+    padding-top: 0;
+    border: 1px solid black;
+    box-shadow: -1px 1px 16px -1px rgba(0, 0, 0, 0.75);
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 1s;
+    width:300px;
+}
