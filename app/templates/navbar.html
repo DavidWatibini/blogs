@@ -1,0 +1,34 @@
+<div class="navbar navbar-inverse" style="background-color: #0B3948;" role="navigation">
+  <div class="container-fluid">
+    <br>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"> Wat Blogs</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right" style="background-color: #0B3948;">
+      {% if current_user.is_authenticated %}
+      <li><a href="{{url_for('main.index',uname=current_user.username)}}">Profile</a></li>
+      <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
+      {% else %}
+      <li><a href="{{url_for('auth.login')}}">Sign in</a></li>
+      {%endif%}
+    </ul>
+    <div class="navbar-collapse collapse" style="background-color: #0B3948;">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/"></a></li>
+        <li><a href="/"></a></li>
+        <li><a href="/"></a></li>
+        <li><a href="/"></a></li>
+        <li><a href="/"></a></li>
+
+    </div>
+    <br>
+
+  </div>
+</div>
