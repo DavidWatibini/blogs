@@ -46,6 +46,24 @@ class Role(db.Model):
 
 		return f'User {self.name}'
 
+class Blog(UserMixin,db.Model):
+
+	__tablename__ = 'blogs'
+
+	id = db.Column(db.Integer,primary_key=True)
+	post = db.Column(db.String(255))
+	body = db.Column(db.String(1000))
+	category = db.Column(db.String(1000))
+	date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+	user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
+	comments = db.relationship('Feedback',backref = 'pitch',lazy = "dynamic")
+
+	def save_pitch(self):
+		db.session.add(self)
+		db.session.commit()
+
+
+
 
 class Popular:
 
