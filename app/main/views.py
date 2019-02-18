@@ -9,5 +9,5 @@ def index():
 
     
     popular = get_quote('popular')
-    print(popular)
+    
     return render_template('index.html', title=title,popular=popular)
