@@ -1,6 +1,6 @@
 # BLOG MY LIFE
 
-This is a Python app that allows users to view news from various news sources.
+This is an app that allows users to view daily personal blog of David Watibini.
 
 ## Author name
 
@@ -8,7 +8,8 @@ This is a Python app that allows users to view news from various news sources.
 
 ## Project Description
 
-This is an app that allows users view daily personal blogs written by David WAtibini concerning all aspects of life.
+This is an app that allows users to view daily personal blogs written by David WAtibini concerning all aspects of life.
+
 
 ## Technologies Used
 
@@ -74,6 +75,20 @@ or just use this
 
 ## BDD
 
+-The app displays various quotes:
+
+**input** :page load
+**output**:various quotes are displayed
+
+-The user views blogs
+
+**input**:click on Blogs
+**output**:displays the list of blogs available
+
+-The user can make comments
+
+**input**:clicks on the specific blog and comments
+**output**:comments are saved to that specific blog
 
 ## TDD
 
