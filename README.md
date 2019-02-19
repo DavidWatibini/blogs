@@ -78,16 +78,22 @@ or just use this
 -The app displays various quotes:
 
 **input** :page load
+
+
 **output**:various quotes are displayed
 
 -The user views blogs
 
 **input**:click on Blogs
+
+
 **output**:displays the list of blogs available
 
 -The user can make comments
 
 **input**:clicks on the specific blog and comments
+
+
 **output**:comments are saved to that specific blog
 
 ## TDD
