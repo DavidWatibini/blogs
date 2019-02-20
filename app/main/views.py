@@ -14,9 +14,9 @@ def index():
     index=Blog.query.all()
 
     first=Blog.query.limit(1).all()
-    
+
     popular = get_quote('popular')
-    
+
     return render_template('index.html', title=title,popular=popular,index=index,first=first)
 
 @main.route('/new_blog', methods = ['GET','POST'])

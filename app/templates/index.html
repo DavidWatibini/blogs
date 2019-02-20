@@ -39,12 +39,13 @@
       </div>
 
     </div>
-    
+
     <div class="col-md-2">
       <hr>
       <h3>Quotes</h3>
       <hr>
       {%for items in popular%}
+      {%- if loop.index >= 10 %}{% break %}{% endif %}
       <hr>
       <div class="cards-two">
       <h4>Quote by {{items.author}}</h4>
