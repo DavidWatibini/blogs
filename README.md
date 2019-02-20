@@ -100,9 +100,11 @@ or just use this
 
 -To test the app, run this commands in the terminal;
 
-`$ python3.6 models.py`
+`$ python3.6 test_users.py`
 
-`$ python3.6 manager.py test`
+`$ python3.6 test_blog.py`
+
+`$ python3.6 test_quote.py`
 
 ## Live link
 
